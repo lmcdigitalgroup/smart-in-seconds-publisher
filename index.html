@@ -2,16 +2,20 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1"
     >
+
     <meta
         name="description"
-        content="Sitio oficial de Smart in Seconds Publisher, herramienta privada para administrar contenido de Smart in Seconds Media."
+        content="Smart in Seconds Publisher es una aplicación privada de escritorio para organizar y cargar videos autorizados al canal SmartinSecondsMedia mediante OAuth 2.0 y YouTube Data API."
     >
 
-    <title>Smart in Seconds Publisher</title>
+    <title>
+        Smart in Seconds Publisher
+    </title>
 
     <link
         rel="canonical"
@@ -30,12 +34,12 @@
             <a
                 class="brand"
                 href="index.html"
+                aria-label="Smart in Seconds Publisher"
             >
                 <span class="brand-mark">S</span>
 
                 <span>
-                    Smart in Seconds
-                    <strong>Publisher</strong>
+                    Smart in Seconds Publisher
                 </span>
             </a>
 
@@ -55,17 +59,26 @@
             <div class="container hero-content">
                 <div class="hero-copy">
                     <p class="eyebrow">
-                        Smart in Seconds Media
+                        Aplicación privada de escritorio
                     </p>
 
                     <h1>
-                        Automatización responsable para contenido digital
+                        Smart in Seconds Publisher
                     </h1>
 
                     <p class="hero-description">
-                        Smart in Seconds Publisher es una herramienta privada
-                        creada para preparar, organizar, programar y administrar
-                        contenido audiovisual del canal Smart in Seconds Media.
+                        Smart in Seconds Publisher es una aplicación privada
+                        de escritorio para Windows. Su propósito es ayudar al
+                        propietario del canal SmartinSecondsMedia a preparar
+                        metadatos, organizar una cola de publicaciones,
+                        verificar el canal autorizado y cargar videos mediante
+                        OAuth 2.0 de Google y YouTube Data API.
+                    </p>
+
+                    <p class="hero-description">
+                        La aplicación funciona localmente, requiere revisión
+                        humana antes de cada publicación y no acepta registros
+                        ni acceso de terceros.
                     </p>
 
                     <div class="hero-actions">
@@ -80,27 +93,31 @@
                             class="button button-secondary"
                             href="terms.html"
                         >
-                            Términos de uso
+                            Términos del servicio
                         </a>
                     </div>
                 </div>
 
                 <aside class="status-card">
                     <p class="status-label">
-                        Estado de la herramienta
+                        Propósito de la aplicación
                     </p>
 
-                    <h2>Uso interno y privado</h2>
+                    <h2>
+                        Administración autorizada de contenido
+                    </h2>
 
                     <p>
-                        No acepta registros de terceros y solamente administra
-                        el canal autorizado por su propietario.
+                        Smart in Seconds Publisher administra únicamente el
+                        canal de YouTube autorizado por su propietario.
                     </p>
 
                     <ul class="status-list">
-                        <li>Autorización mediante OAuth 2.0</li>
-                        <li>Datos almacenados localmente</li>
-                        <li>Control del propietario del canal</li>
+                        <li>Autorización mediante OAuth 2.0.</li>
+                        <li>Verificación del canal autorizado.</li>
+                        <li>Carga de videos y metadatos.</li>
+                        <li>Revisión humana antes de publicar.</li>
+                        <li>Datos almacenados localmente.</li>
                     </ul>
                 </aside>
             </div>
@@ -109,15 +126,18 @@
         <section class="section">
             <div class="container">
                 <div class="section-heading">
-                    <p class="eyebrow">Funciones</p>
+                    <p class="eyebrow">
+                        Funcionalidad
+                    </p>
 
                     <h2>
                         Qué hace Smart in Seconds Publisher
                     </h2>
 
                     <p>
-                        La aplicación ayuda a administrar un flujo de trabajo
-                        bilingüe en inglés y español.
+                        La aplicación facilita un flujo de trabajo bilingüe
+                        en inglés y español para administrar contenido del
+                        canal SmartinSecondsMedia.
                     </p>
                 </div>
 
@@ -126,8 +146,8 @@
                         <h3>Preparación de contenido</h3>
 
                         <p>
-                            Organiza videos, títulos, descripciones,
-                            etiquetas, idiomas y archivos relacionados.
+                            Organiza archivos de video, títulos, descripciones,
+                            etiquetas e idiomas antes de la carga.
                         </p>
                     </article>
 
@@ -135,17 +155,36 @@
                         <h3>Cola de publicaciones</h3>
 
                         <p>
-                            Administra fechas, horarios, estados y resultados
-                            de las publicaciones programadas.
+                            Conserva fechas, horarios, estados y resultados de
+                            las publicaciones programadas.
                         </p>
                     </article>
 
                     <article class="feature-card">
-                        <h3>Integración con YouTube</h3>
+                        <h3>Autorización con Google</h3>
 
                         <p>
-                            Utiliza OAuth 2.0 y los Servicios de APIs de
-                            YouTube para realizar acciones autorizadas.
+                            Utiliza OAuth 2.0 para obtener autorización sin
+                            solicitar ni almacenar la contraseña de Google.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Integración con YouTube Data API</h3>
+
+                        <p>
+                            Utiliza los métodos channels.list y videos.insert
+                            para verificar el canal y cargar videos
+                            autorizados.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Revisión humana</h3>
+
+                        <p>
+                            Permite comprobar el video y sus metadatos antes
+                            de ejecutar una publicación.
                         </p>
                     </article>
 
@@ -159,20 +198,22 @@
                     </article>
 
                     <article class="feature-card">
-                        <h3>Revisión humana</h3>
+                        <h3>Registros técnicos</h3>
 
                         <p>
-                            Permite revisar videos y metadatos antes de su
-                            publicación pública.
+                            Conserva localmente estados, identificadores,
+                            fechas y errores necesarios para administrar el
+                            sistema.
                         </p>
                     </article>
 
                     <article class="feature-card">
-                        <h3>Registros técnicos</h3>
+                        <h3>Uso interno y privado</h3>
 
                         <p>
-                            Conserva localmente estados, fechas y errores
-                            necesarios para administrar el sistema.
+                            No se distribuye como servicio público, no ofrece
+                            cuentas a terceros y solo administra el canal
+                            autorizado.
                         </p>
                     </article>
                 </div>
@@ -182,7 +223,9 @@
         <section class="section section-muted">
             <div class="container split-section">
                 <div>
-                    <p class="eyebrow">Privacidad</p>
+                    <p class="eyebrow">
+                        Datos y privacidad
+                    </p>
 
                     <h2>
                         Uso limitado de los datos
@@ -190,9 +233,9 @@
 
                     <p>
                         Los datos obtenidos mediante Google y YouTube se
-                        utilizan exclusivamente para identificar el canal,
-                        cargar contenido autorizado, administrar metadatos y
-                        registrar los resultados de las operaciones.
+                        utilizan exclusivamente para identificar el canal
+                        autorizado, cargar contenido, administrar metadatos y
+                        registrar el resultado de las operaciones.
                     </p>
 
                     <p>
@@ -200,16 +243,29 @@
                         crea perfiles publicitarios y no comparte datos con
                         corredores de información.
                     </p>
+
+                    <p>
+                        Consulta la
+                        <a href="privacy.html">
+                            Política de privacidad de Smart in Seconds
+                            Publisher
+                        </a>
+                        para conocer los datos utilizados, su conservación,
+                        eliminación y el procedimiento para revocar el acceso.
+                    </p>
                 </div>
 
                 <div class="highlight-box">
-                    <h3>Control del usuario</h3>
+                    <h3>
+                        Control del propietario
+                    </h3>
 
                     <ul>
                         <li>Revisar los permisos concedidos.</li>
                         <li>Revocar el acceso desde la Cuenta de Google.</li>
                         <li>Solicitar la eliminación de datos locales.</li>
                         <li>Desactivar la automatización.</li>
+                        <li>Revisar cada publicación antes de ejecutarla.</li>
                     </ul>
                 </div>
             </div>
@@ -218,15 +274,17 @@
         <section class="section">
             <div class="container contact-section">
                 <div>
-                    <p class="eyebrow">Contacto</p>
+                    <p class="eyebrow">
+                        Contacto
+                    </p>
 
                     <h2>
-                        Consultas sobre la aplicación
+                        Consultas sobre Smart in Seconds Publisher
                     </h2>
 
                     <p>
-                        Para solicitudes de acceso, eliminación de datos,
-                        revocación o preguntas sobre privacidad:
+                        Para preguntas sobre la aplicación, privacidad,
+                        revocación de acceso o eliminación de datos:
                     </p>
                 </div>
 
@@ -253,7 +311,7 @@
                 </a>
 
                 <a href="terms.html">
-                    Términos de uso
+                    Términos del servicio
                 </a>
             </div>
         </div>
